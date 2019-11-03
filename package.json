@@ -1,0 +1,24 @@
+{
+  "name": "books-api",
+  "version": "1.0.0",
+  "description": "Sistema para Ranking de libros donde usuarios podran publicar la ficha de un libro y otros podran calificar segun su gusto.",
+  "main": "index.js",
+  "scripts": {
+    "nodemon": "nodemon src/index.js",
+    "dbinit": "knex migrate:latest && knex seed:run --specific=addUsers.js && knex seed:run --specific=addBooks.js",
+    "start": "node src/index.js"
+  },
+  "author": "Daurin",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "knex": "^0.20.1",
+    "mysql": "^2.17.1",
+    "util": "^0.12.1"
+  }
+}
