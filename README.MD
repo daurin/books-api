@@ -6,8 +6,8 @@
 ## Requisitos del proyecto
 
 - Node
-- Postman o un cliente para hacer las consultas a la api rest
-- mysql para poder que el sistema puedea usar la base de datos
+- Postman o un cliente para hacer las peticiones a la api rest
+- mysql para que la api puedea conectarse a la base de datos
 
 ## Como configurar el proyecto
 1. Abrimos el arhivo ubicado en `src/config/env.json` y asignamos los datos de acuerdo a la pc en la cual esta instalada
@@ -17,7 +17,7 @@
 
 ## Como usar
 
-La api consta de una serie de rutas para realizar las funcione que pide la prueba de backend test.
+La api consta de una serie de rutas para realizar las funciones que pide la prueba de backend test.
 las rutas son las siguientes:
 
 | Ruta | Metodo | Descripción |
@@ -28,5 +28,5 @@ las rutas son las siguientes:
 | `/books/:id` | GET |Trae un libro especifico por medio del id |
 | `/books` | GET | Trae todos los libros de forma paginada y en el orden de publicacion descendente. Params url: (text_search, offset, limit) |
 
-Ejecuta el siguiente comando para inicar la app.
+Ejecuta el siguiente comando para inicar la app:
 `npm start`
